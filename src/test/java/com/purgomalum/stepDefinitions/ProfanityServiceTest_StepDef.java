@@ -5,15 +5,22 @@ import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
+
 import static com.purgomalum.Constants.*;
 
 
 public class ProfanityServiceTest_StepDef {
 
-    @Given("^a call is made to profanity service with text \"([^\"]*)\"$")
-    public void a_call_is_made_to_profanity_service_with_text(String arg1) throws Throwable {
+    public ProfanityServiceTest_StepDef(){
+
         RestAssured.baseURI = BASE_URI;
         RestAssured.basePath = CONTAINS_PROFANITY;
+
+    }
+
+    @Given("^a call is made to profanity service with text \"([^\"]*)\"$")
+    public void a_call_is_made_to_profanity_service_with_text(String arg1) throws Throwable {
+
         RequestSpecification request = RestAssured.given();
         request.param(TEXT, arg1);
         BaseStepDef.response = request.get();
@@ -27,8 +34,7 @@ public class ProfanityServiceTest_StepDef {
 
     @Given("^a call is made to profanity service with text \"([^\"]*)\" and a new profanity word \"([^\"]*)\"$")
     public void a_call_is_made_to_profanity_service_with_text_and_a_new_profanity_word(String arg1, String arg2) throws Throwable {
-        RestAssured.baseURI = BASE_URI;
-        RestAssured.basePath = CONTAINS_PROFANITY;
+
         RequestSpecification request = RestAssured.given();
         request.param(TEXT, arg1);
         request.param(ADD, arg2);

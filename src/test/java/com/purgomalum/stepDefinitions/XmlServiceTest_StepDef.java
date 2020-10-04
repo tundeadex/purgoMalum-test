@@ -11,10 +11,15 @@ import io.restassured.path.xml.XmlPath;
 
 public class XmlServiceTest_StepDef {
 
-    @Given("^a call is made to profanity XML service with text \"([^\"]*)\"$")
-    public void a_call_is_made_to_profanity_XML_service_with_text(String arg1) throws Throwable {
+    public XmlServiceTest_StepDef(){
+
         RestAssured.baseURI = BASE_URI;
         RestAssured.basePath = XML;
+    }
+
+    @Given("^a call is made to profanity XML service with text \"([^\"]*)\"$")
+    public void a_call_is_made_to_profanity_XML_service_with_text(String arg1) throws Throwable {
+
         RequestSpecification request = RestAssured.given();
         request.param(TEXT, arg1);
         BaseStepDef.response = request.get();
@@ -38,8 +43,7 @@ public class XmlServiceTest_StepDef {
 
     @Given("^a call is made to profanity XML service with text \"([^\"]*)\", add \"([^\"]*)\" and fillChar\"([^\"]*)\"$")
     public void a_call_is_made_to_profanity_XML_service_with_text_add_and_fillChar(String arg1, String arg2, String arg3) throws Throwable {
-        RestAssured.baseURI = BASE_URI;
-        RestAssured.basePath = XML;
+
         RequestSpecification request = RestAssured.given();
         request.param(TEXT, arg1);
         request.param(ADD, arg2);
@@ -49,8 +53,7 @@ public class XmlServiceTest_StepDef {
 
     @Given("^a call is made to profanity XML service with text \"([^\"]*)\" and fillText \"([^\"]*)\"$")
     public void a_call_is_made_to_profanity_XML_service_with_text_and_fillText(String arg1, String arg2) throws Throwable {
-        RestAssured.baseURI = BASE_URI;
-        RestAssured.basePath = XML;
+
         RequestSpecification request = RestAssured.given();
         request.param(TEXT, arg1);
         request.param(FILL_TEXT, arg2);
