@@ -1,4 +1,4 @@
-package com.getChipTest.stepDefinitions;
+package com.purgomalum.stepDefinitions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -8,9 +8,9 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
-import static com.getChipTest.Constant.Const.*;
+import static com.purgomalum.constant.Constants.*;
 
-import static com.getChipTest.Constant.Const.BASE_URI;
+import static com.purgomalum.constant.Constants.BASE_URI;
 
 
 

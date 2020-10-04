@@ -1,10 +1,10 @@
-package com.getChipTest.stepDefinitions;
+package com.purgomalum.stepDefinitions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
 
-import static com.getChipTest.Constant.Const.*;
+import static com.purgomalum.constant.Constants.*;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;

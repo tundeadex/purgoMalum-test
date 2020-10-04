@@ -1,4 +1,4 @@
-package com.getChipTest.stepDefinitions;
+package com.purgomalum.stepDefinitions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -7,7 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
-import static com.getChipTest.Constant.Const.*;
+import static com.purgomalum.constant.Constants.*;
 
 public class PlainServiceTest_StepDef {
     private static Response response;
