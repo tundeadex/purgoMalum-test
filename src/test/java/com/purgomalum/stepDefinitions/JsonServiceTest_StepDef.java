@@ -8,9 +8,9 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
-import static com.purgomalum.constant.Constants.*;
+import static com.purgomalum.Constants.*;
 
-import static com.purgomalum.constant.Constants.BASE_URI;
+import static com.purgomalum.Constants.BASE_URI;
 
 
 

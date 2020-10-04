@@ -4,7 +4,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
 
-import static com.purgomalum.constant.Constants.*;
+import static com.purgomalum.Constants.*;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
