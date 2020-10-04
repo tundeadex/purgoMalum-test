@@ -9,7 +9,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
-import static com.getChipTest.pageObject.Constants.*;
+import static com.getChipTest.Constant.Const.*;
 
 
 public class ProfanityServiceTest_StepDef {

@@ -1,6 +1,6 @@
-package com.getChipTest.pageObject;
+package com.getChipTest.Constant;
 
-public class Constants {
+public class Const {
 
         public static final String BASE_URI = "https://www.purgomalum.com/service";
         // Method Names

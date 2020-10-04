@@ -8,9 +8,9 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
-import static com.getChipTest.pageObject.Constants.*;
+import static com.getChipTest.Constant.Const.*;
 
-import static com.getChipTest.pageObject.Constants.BASE_URI;
+import static com.getChipTest.Constant.Const.BASE_URI;
 
 
 
